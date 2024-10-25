@@ -118,9 +118,11 @@ function DashboardSidebarSubNavigation({
       const nestedNavigationCollapseIcon = isNestedNavigationExpanded ? _ExpandLessIcon || (_ExpandLessIcon = /*#__PURE__*/_jsx(ExpandLessIcon, {})) : _ExpandMoreIcon || (_ExpandMoreIcon = /*#__PURE__*/_jsx(ExpandMoreIcon, {}));
       const listItemIconSize = 34;
       const isSelected = isPageItemSelected(navigationItem, basePath, pathname);
+      /*
       if (process.env.NODE_ENV !== 'production' && isSelected && selectedItemId) {
         console.warn(`Duplicate selected path in navigation: ${navigationItemFullPath}`);
       }
+       */
       if (isSelected && !selectedItemId) {
         selectedItemId = navigationItemId;
       }
